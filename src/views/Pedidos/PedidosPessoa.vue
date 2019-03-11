@@ -38,7 +38,7 @@
               </td>
               <td>{{pedido.idPedido}}</td>
               <td>{{pedido.dataPedido}}</td>
-              <td>{{pedido.valorTotal}}</td>
+              <td>{{pedido.valorTotal.toFixed(2)}}</td>
             </tr>
             <tr v-show="pedido.visivel">
               <td colspan="4">
@@ -55,9 +55,9 @@
                     <tbody>
                       <tr v-for="item in pedido.itens" :key="item.id">
                         <td>{{item.descricao}}</td>
-                        <td>{{item.preco}}</td>
+                        <td>{{item.preco.toFixed(2)}}</td>
                         <td>{{item.quantidade}}</td>
-                        <td>{{item.subtotal}}</td>
+                        <td>{{item.subtotal.toFixed(2)}}</td>
                       </tr>
                     </tbody>
                   </table>

@@ -61,11 +61,11 @@
         <div class="container">
           <div class="row">
             <div
-              class="col-lg-3 col-md-3 mb-3"
+              class="col-lg-3 col-md-4 col-sm-6"
               v-for="produto in pedidos.produtos"
               :key="produto.id"
             >
-              <div class="card" style="height: 325px; width: 200px; margin-top: 15px; margin-left: 10px">
+              <div class="card" style="height: 325px; width: 200px; margin-top: 15px; margin-bottom: 15px">
                 <a>
                   <img v-if="produto.arquivo != null" class="card-img-top image-display" :src="'data:image;base64,' + produto.arquivo" alt>
                   <img v-else class="card-img-top image-display" src="@/assets/shop-placeholder.png" alt>

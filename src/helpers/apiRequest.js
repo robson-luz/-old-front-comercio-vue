@@ -35,7 +35,7 @@ export default {
         if (!(data instanceof FormData)) {
             console.error("Data deve ser uma instância de FormData.");
         }
-        console.log(data);
+
         return apiRequest({
             method : 'post',
             url,

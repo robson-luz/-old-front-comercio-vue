@@ -11,7 +11,6 @@ export default {
         if (data.numeroCelular != null) formData.append('arquivo', data.numeroCelular);
         formData.append('login', data.login);
         formData.append('senha', data.senha);
-        console.log(data.arquivo);
         
         if (data.arquivo != null) formData.append('arquivo', data.arquivo);
 

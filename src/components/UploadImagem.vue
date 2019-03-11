@@ -47,7 +47,6 @@ export default {
   },
   watch: {
     imageData: function (val) {
-      console.log(val);
         this.base64 = val != undefined ? val : "";
     }    
   },

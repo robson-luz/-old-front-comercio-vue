@@ -14,7 +14,6 @@ export default {
         formData.append('descricao', data.descricao);
         formData.append('preco', data.preco);
         formData.append('idCategoria', data.idCategoria);
-        console.log(data.arquivo);
         
         if (data.arquivo != null) formData.append('arquivo', data.arquivo);
 
