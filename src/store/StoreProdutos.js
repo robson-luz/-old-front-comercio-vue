@@ -12,6 +12,7 @@ export const storeProdutos = {
         },
         loading: false,
         produtos: [],
+        categorias: [],
         produto: {},
         info: "",
         erros: [],

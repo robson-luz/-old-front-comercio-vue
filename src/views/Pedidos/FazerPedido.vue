@@ -172,6 +172,7 @@ export default {
   },
   created() {
     this.pedidos.todasCategorias();
+    this.pedidos.consultarProdutos();
   }
 };
 </script>

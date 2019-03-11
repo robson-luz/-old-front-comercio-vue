@@ -18,6 +18,7 @@ export const storePedidos = {
             total: 0,
             itens: []
         },
+        categorias: [],
         produtos: [],
         produto: {},
         info: "",
@@ -87,7 +88,7 @@ export const storePedidos = {
         todasCategorias() {
             CategoriasService.todas()
                 .then(response => {
-                    this.categorias = response.data.categorias;                    
+                    this.categorias = response.data.categorias;        
                 });
         },
     }
